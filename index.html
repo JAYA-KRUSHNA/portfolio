@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jayanthi Jaya Krushna | Data Science &amp; ML Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Jayanthi Jaya Krushna – Data Science &amp; Machine Learning Enthusiast." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-logo">JK</div>
+            <div class="loader-bar">
+                <div class="loader-fill" id="loader-fill"></div>
+            </div>
+            <p class="loader-text">Initializing...</p>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo"><span class="logo-bracket">&lt;</span>JK<span class="logo-bracket">/&gt;</span></div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <span class="badge-dot"></span> Open to Opportunities
+            </div>
+            <h1 class="hero-name reveal-up">
+                <span class="name-line">Jayanthi</span>
+                <span class="name-line gradient-text">Jaya Krushna</span>
+            </h1>
+            <div class="hero-role reveal-up">
+                <span class="role-prefix">I build</span>
+                <span class="typed-wrapper">
+                    <span id="typed-text" class="typed-text"></span><span class="cursor-blink">|</span>
+                </span>
+            </div>
+            <p class="hero-desc reveal-up">
+                Passionate about building intelligent systems using <strong>Data Science</strong>, <strong>Machine
+                    Learning</strong>, and <strong>AI</strong>. Solving real-world problems through technology and
+                continuously learning new tools and frameworks.
+            </p>
+            <div class="hero-cta reveal-up">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+            </div>
+            <div class="hero-stats reveal-up">
+                <div class="stat-card">
+                    <span class="stat-num" data-count="3">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-card">
+                    <span class="stat-num" data-count="5">0</span>
+                    <span class="stat-label">Achievements</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-card">
+                    <span class="stat-num" data-count="9" data-decimal=".12">0</span>
+                    <span class="stat-label">CGPA</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-3d" id="hero-3d">
+            <div class="card-3d" id="card-3d">
+                <div class="card-3d-inner">
+                    <div class="card-avatar">JK</div>
+                    <h3>Jaya Krushna</h3>
+                    <p>CSE (Data Science)</p>
+                    <div class="card-tags">
+                        <span>ML</span><span>Java</span><span>DSA</span>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <section class="section about" id="about">
+        <div class="section-header reveal-up">
+            <span class="section-tag">// about_me</span>
+            <h2>Who I Am</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text reveal-left">
+                <p class="about-lead">I am a <strong>Computer Science Engineering (Data Science)</strong> undergraduate
+                    with a passion for Machine Learning and AI-powered applications.</p>
+                <p>With hands-on experience in Python, Java, C, and web technologies, I enjoy building full-stack AI
+                    systems that solve real-world problems — from traffic monitoring to library management.</p>
+                <p>Beyond coding, I lead communities and mentor peers, serving as a Class Representative, Hackathon Club
+                    Leader, and SOCH Community Lead.</p>
+                <div class="about-info-grid">
+                    <div class="info-item">
+                        <span class="info-label">College</span>
+                        <span class="info-val">RGMCET, Nandyal</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Degree</span>
+                        <span class="info-val">B.Tech CSE (DS)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">CGPA</span>
+                        <span class="info-val">9.12 / 10</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Batch</span>
+                        <span class="info-val">2023 – 2027</span>
+                    </div>
+                </div>
+            </div>
+            <div class="leadership-cards reveal-right">
+                <h3 class="sub-heading">Leadership Roles</h3>
+                <div class="l-card">
+                    <div class="l-icon">
+                        <svg viewBox="0 0 24 24" width="26" height="26">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>Class Representative</strong>
+                        <p>CSE-DS A Section — coordinating academics &amp; events</p>
+                    </div>
+                </div>
+                <div class="l-card">
+                    <div class="l-icon">
+                        <svg viewBox="0 0 24 24" width="26" height="26">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>YugaSpark Hackathon Club</strong>
+                        <p>Club Leader — organizing hackathons &amp; peer training</p>
+                    </div>
+                </div>
+                <div class="l-card">
+                    <div class="l-icon">
+                        <svg viewBox="0 0 24 24" width="26" height="26">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>SOCH Community Lead</strong>
+                        <p>Mentoring juniors in tech &amp; career growth</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section skills" id="skills">
+        <div class="section-header reveal-up">
+            <span class="section-tag">// skills</span>
+            <h2>My Expertise</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category reveal-up">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon-wrap purple">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8M12 17v4" />
+                        </svg>
+                    </div>
+                    <h3>Programming Languages</h3>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-pill">
+                        <span class="pill-badge java">☕</span>
+                        <span class="pill-name">Java</span>
+                        <span class="pill-pct">95%</span>
+                        <div class="skill-bar-mini">
+                            <div style="width:95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-pill">
+                        <span class="pill-badge c">⚙</span>
+                        <span class="pill-name">C</span>
+                        <span class="pill-pct">80%</span>
+                        <div class="skill-bar-mini">
+                            <div style="width:80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-pill">
+                        <span class="pill-badge py">🐍</span>
+                        <span class="pill-name">Python</span>
+                        <span class="pill-pct">70%</span>
+                        <div class="skill-bar-mini">
+                            <div style="width:70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category reveal-up">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon-wrap cyan">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h3>Web Development</h3>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-pill">
+                        <span class="pill-badge html">🔶</span>
+                        <span class="pill-name">HTML</span>
+                        <span class="pill-pct">60%</span>
+                        <div class="skill-bar-mini">
+                            <div style="width:60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-pill">
+                        <span class="pill-badge css">🎨</span>
+                        <span class="pill-name">CSS</span>
+                        <span class="pill-pct">60%</span>
+                        <div class="skill-bar-mini">
+                            <div style="width:60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category reveal-up">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon-wrap pink">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path d="M12 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10z" />
+                            <path d="M2 21a8 8 0 0 1 10.434-7.62M17 14l2.5 2.5-5 5L12 19" />
+                            <path d="M19.5 16.5L22 14" />
+                        </svg>
+                    </div>
+                    <h3>Technologies &amp; Concepts</h3>
+                </div>
+                <div class="skill-items">
+                    <div class="skill-pill">
+                        <span class="pill-badge ml">🧠</span>
+                        <span class="pill-name">Machine Learning</span>
+                        <span class="pill-pct">70%</span>
+                        <div class="skill-bar-mini">
+                            <div style="width:70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-pill">
+                        <span class="pill-badge ds">📊</span>
+                        <span class="pill-name">Data Science</span>
+                        <span class="pill-pct">60%</span>
+                        <div class="skill-bar-mini">
+                            <div style="width:60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-pill">
+                        <span class="pill-badge dsa">🔗</span>
+                        <span class="pill-name">DSA</span>
+                        <span class="pill-pct">60%</span>
+                        <div class="skill-bar-mini">
+                            <div style="width:60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category tech-stack reveal-up">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon-wrap amber">
+                        <svg viewBox="0 0 24 24" width="20" height="20">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                        </svg>
+                    </div>
+                    <h3>Tech Stack Used in Projects</h3>
+                </div>
+                <div class="tech-bubbles">
+                    <span class="tech-bubble">Next.js</span>
+                    <span class="tech-bubble">TypeScript</span>
+                    <span class="tech-bubble">Node.js</span>
+                    <span class="tech-bubble">FastAPI</span>
+                    <span class="tech-bubble">TensorFlow</span>
+                    <span class="tech-bubble">Supabase</span>
+                    <span class="tech-bubble">Flask</span>
+                    <span class="tech-bubble">SQLite</span>
+                    <span class="tech-bubble">JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section projects" id="projects">
+        <div class="section-header reveal-up">
+            <span class="section-tag">// projects</span>
+            <h2>Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+
+            <div class="project-card reveal-up" id="project-slevis">
+                <div class="project-card-inner">
+                    <div class="project-header">
+                        <div class="project-number">01</div>
+                        <div class="project-links">
+                            <a href="https://github.com/JAYA-KRUSHNA/SLEVIS.git" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" width="13" height="13">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">SLEVIS</h3>
+                    <p class="project-full-name">Smart Law Enforcement &amp; Vehicle Inspection System</p>
+                    <p class="project-desc">AI-based traffic monitoring system that detects vehicles and identifies
+                        potential violations using computer vision and deep learning models to analyze real-time traffic
+                        patterns.</p>
+                    <div class="project-tech">
+                        <span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>FastAPI</span><span>TensorFlow</span><span>Supabase</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-badge ai">AI / Computer Vision</span>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </div>
+
+            <div class="project-card reveal-up" id="project-booksync">
+                <div class="project-card-inner">
+                    <div class="project-header">
+                        <div class="project-number">02</div>
+                        <div class="project-links">
+                            <a href="https://github.com/JAYA-KRUSHNA/Smart_Library.git" target="_blank"
+                                class="project-link">
+                                <svg viewBox="0 0 24 24" width="13" height="13">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">BookSync</h3>
+                    <p class="project-full-name">Smart Library Management System</p>
+                    <p class="project-desc">Web-based library management with admin and student portals, secure
+                        authentication, book borrowing/returning, due-date tracking, and automated email notifications.
+                    </p>
+                    <div class="project-tech">
+                        <span>Flask</span><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQLite</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-badge web">Web App</span>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </div>
+
+            <div class="project-card reveal-up" id="project-opti">
+                <div class="project-card-inner">
+                    <div class="project-header">
+                        <div class="project-number">03</div>
+                        <div class="project-links">
+                            <a href="https://github.com/JAYA-KRUSHNA/TIME-TABLE-GENERATOR.git" target="_blank"
+                                class="project-link">
+                                <svg viewBox="0 0 24 24" width="13" height="13">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">OptiSchedule</h3>
+                    <p class="project-full-name">AI-Powered Timetable Generator</p>
+                    <p class="project-desc">Constraint-based timetable scheduling system that automatically generates
+                        optimized schedules respecting no-overlap rules, faculty preferences, and balanced distribution.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Optimization Algorithms</span><span>Constraint Satisfaction</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-badge ml">Optimization / AI</span>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section achievements" id="achievements">
+        <div class="section-header reveal-up">
+            <span class="section-tag">// achievements</span>
+            <h2>Awards &amp; Milestones</h2>
+        </div>
+        <div class="achievements-row">
+            <div class="ach-timeline reveal-left">
+                <h3 class="sub-heading">Competitions &amp; Awards</h3>
+
+                <div class="atl-item">
+                    <div class="atl-dot">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#fbbf24" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                            <path d="M4 22h16" />
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                        </svg>
+                    </div>
+                    <div class="atl-content">
+                        <span class="atl-rank gold">🥇 1st Place</span>
+                        <h4>24-Hour Hackathon</h4>
+                        <p>Conducted by JNTU Ananthapuram — built a full-stack solution in 24 hours</p>
+                    </div>
+                </div>
+
+                <div class="atl-item">
+                    <div class="atl-dot">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#fbbf24" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3" />
+                            <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                            <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+                        </svg>
+                    </div>
+                    <div class="atl-content">
+                        <span class="atl-rank gold">🥇 1st Place</span>
+                        <h4>Inter-College SQL Hackathon</h4>
+                        <p>Secured top position in a competitive SQL problem-solving event</p>
+                    </div>
+                </div>
+
+                <div class="atl-item">
+                    <div class="atl-dot">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#a78bfa" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <div class="atl-content">
+                        <span class="atl-rank purple">🏆 Winner ×2</span>
+                        <h4>Inter-College Coding Competitions</h4>
+                        <p>Won multiple inter-college competitive programming events</p>
+                    </div>
+                </div>
+
+                <div class="atl-item">
+                    <div class="atl-dot">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#06b6d4" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="2" ry="2" />
+                            <path d="M16 8l-4 4-4-4" />
+                            <line x1="12" y1="16" x2="12" y2="12" />
+                        </svg>
+                    </div>
+                    <div class="atl-content">
+                        <span class="atl-rank cyan">♟ Champion</span>
+                        <h4>Zonal Level Chess Championship</h4>
+                        <p>Strategic thinking &amp; competitive excellence beyond the keyboard</p>
+                    </div>
+                </div>
+
+                <div class="atl-item">
+                    <div class="atl-dot">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#34d399" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <div class="atl-content">
+                        <span class="atl-rank green">🧮 State Winner</span>
+                        <h4>State Level Abacus Competition</h4>
+                        <p>Mathematical aptitude and mental calculation excellence</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certs-panel reveal-right">
+                <h3 class="sub-heading">Certifications</h3>
+
+                <div class="cert-card">
+                    <div class="cert-icon-wrap purple">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8M12 17v4" />
+                            <path d="M6 8l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <div class="cert-body">
+                        <strong>UiPath Automation Developer</strong>
+                        <span>Robotic Process Automation</span>
+                        <div class="cert-badge">Associate Certified</div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon-wrap cyan">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+                        </svg>
+                    </div>
+                    <div class="cert-body">
+                        <strong>Agentforce Specialist</strong>
+                        <span>Salesforce Platform</span>
+                        <div class="cert-badge">Specialist Certified</div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon-wrap amber">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10" />
+                            <line x1="12" y1="20" x2="12" y2="4" />
+                            <line x1="6" y1="20" x2="6" y2="14" />
+                        </svg>
+                    </div>
+                    <div class="cert-body">
+                        <strong>Data Analyst Certification</strong>
+                        <span>DataCamp</span>
+                        <div class="cert-badge">Verified Certificate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="section-header reveal-up">
+            <span class="section-tag">// contact</span>
+            <h2>Let's Connect</h2>
+        </div>
+        <div class="contact-container reveal-up">
+            <div class="contact-text">
+                <p>I'm always open to interesting projects, collaborations, and opportunities. Feel free to reach out!
+                </p>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:jayakrushna1622@gmail.com" class="contact-card" id="contact-email">
+                    <div class="contact-icon email-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-val">jayakrushna1622@gmail.com</span>
+                    </div>
+                    <svg class="contact-arrow" viewBox="0 0 24 24" width="18" height="18">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="https://github.com/JAYA-KRUSHNA" target="_blank" class="contact-card" id="contact-github">
+                    <div class="contact-icon github-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-val">JAYA-KRUSHNA</span>
+                    </div>
+                    <svg class="contact-arrow" viewBox="0 0 24 24" width="18" height="18">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/jaya-krushna-1525b2327" target="_blank" class="contact-card"
+                    id="contact-linkedin">
+                    <div class="contact-icon linkedin-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-val">jaya-krushna</span>
+                    </div>
+                    <svg class="contact-arrow" viewBox="0 0 24 24" width="18" height="18">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Designed &amp; Built with ❤️ by <strong>Jayanthi Jaya Krushna</strong></p>
+        <p class="footer-sub">© 2025 All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
