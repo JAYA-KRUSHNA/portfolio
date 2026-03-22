@@ -1681,11 +1681,11 @@ strong {
 
 .hero-photo-mobile {
   display: none;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   border: 3px solid transparent;
   background:
     linear-gradient(var(--bg3), var(--bg3)) padding-box,
