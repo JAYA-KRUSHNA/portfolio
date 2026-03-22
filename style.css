@@ -1679,6 +1679,21 @@ strong {
   box-shadow: 0 0 40px rgba(139, 92, 246, .4);
 }
 
+.hero-photo-mobile {
+  display: none;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(var(--bg3), var(--bg3)) padding-box,
+    var(--grad) border-box;
+  box-shadow: 0 0 50px rgba(139, 92, 246, .4);
+  margin: 0 auto 1.5rem;
+}
+
 /* ══════════════════════════════
    CONTACT
 ══════════════════════════════ */
@@ -1974,6 +1989,10 @@ strong {
 
   .hero-3d {
     display: none;
+  }
+
+  .hero-photo-mobile {
+    display: block;
   }
 
   .hero-cta,
