@@ -170,7 +170,7 @@ function initHamburger() {
 function initTyped() {
   const el = document.getElementById('typed-text');
   if (!el) return;
-  const phrases = ['Intelligent Systems', 'ML Models', 'AI Applications', 'Data Pipelines', 'Smart Solutions', 'Computer Vision'];
+  const phrases = ['AI-Powered Applications', 'Full-Stack ML Systems', 'Data-Driven Solutions', 'Intelligent Automation', 'Computer Vision Models'];
   let pi = 0, ci = 0, del = false;
   function run() {
     const cur = phrases[pi];
